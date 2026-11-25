@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>FantasyForge</title>
+  <meta name="description" content="Schmiedetal – du schmiedest Werkzeuge und Bauwerke für dein Tal, und jedes davon verändert es.">
+  <meta name="theme-color" content="#3a2c24">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/icon-192.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Alegreya:ital,wght@0,400;0,700;1,400&family=Alegreya+SC:wght@700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script>window.APP_VERSION = '0.1.0';</script>
+</head>
+<body>
+  <header class="top">
+    <div class="title"><h1>FantasyForge</h1><span id="clock"></span></div>
+    <button class="menu" data-act="menu" aria-label="Werkbank öffnen">☰</button>
+  </header>
+  <div id="update" class="update" hidden>Eine neue Version ist da. <button class="link" data-act="reload">Neu laden</button></div>
+  <div id="res" class="res"></div>
+
+  <main>
+    <div id="compare" class="compare" hidden></div>
+    <div id="map" class="mapwrap"></div>
+    <div id="hint" class="hint" hidden></div>
+  </main>
+
+  <section class="panel">
+    <h2>Esse <small id="glut"></small></h2>
+    <div id="esse"></div>
+    <h2>Ablage <small>Tippe ein Stück, dann ein Feld</small></h2>
+    <div id="inv" class="inv"></div>
+  </section>
+
+  <div id="scrim" class="scrim" hidden></div>
+  <div id="sheet" class="sheet" hidden></div>
+  <div id="toasts" class="toasts"></div>
+
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
