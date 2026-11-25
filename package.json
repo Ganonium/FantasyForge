@@ -1,0 +1,10 @@
+{
+  "name": "fantasyforge",
+  "private": true,
+  "type": "module",
+  "description": "Schmiedetal – Prototyp: Handy-Spiel, in dem jedes geschmiedete Stück das Tal verändert.",
+  "scripts": {
+    "start": "python3 -m http.server 8080",
+    "balance": "node tools/balance.mjs"
+  }
+}
